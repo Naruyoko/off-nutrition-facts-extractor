@@ -30,7 +30,6 @@ export interface ExtractionData {
   servingSize: string;
   detectedLanguage: string;
   currentLanguage: string;
-  labelFormat: string;
   confidenceScore: number;
   nutrients: (NutrientItem & {displayedName: string})[];
   unrecognizedNutrients: NutrientItem[];
@@ -45,7 +44,6 @@ export const extractionJsonSchema =
   z.object({
     servingSize: z.string(),
     detectedLanguage: z.string(),
-    labelFormat: z.string(),
     confidenceScore: z.number(),
     nutrients: z.array(
       z.object({

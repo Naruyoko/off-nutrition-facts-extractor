@@ -361,7 +361,6 @@ CRITICAL RULES:
 SCHEMA SPECIFICATIONS:
 - servingSize: Extracted serving size string, or "" if none.
 - detectedLanguage: Must be "${detectedLanguage}".
-- labelFormat: Format type ("US FDA Nutrition Facts", "EU / UK 100g Table", "Japanese 栄養成分表示", "Bilingual", "Other").
 - confidenceScore: Number from 0.0 to 1.0 representing overall OCR and reading confidence.
 - nutrients: Array of extracted nutrients matching the Open Food Facts taxonomy:
 ${taxonomyListStr}

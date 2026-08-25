@@ -125,7 +125,7 @@ export function generateAsciiTable(data: ExtractionData): string {
   lines.push('               OPEN FOOD FACTS - NUTRITION FACTS TABLE              ');
   lines.push(border);
   lines.push(`Serving Size: ${data.servingSize || 'Not specified'}`);
-  lines.push(`Label Format: ${data.labelFormat || 'Standard'} | Language: ${data.detectedLanguage}`);
+  lines.push(`Language: ${data.detectedLanguage}`);
   lines.push(subBorder);
 
   const col1Width = 24;

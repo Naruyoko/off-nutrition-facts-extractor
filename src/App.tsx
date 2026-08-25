@@ -387,7 +387,7 @@ export default function App() {
                         </span>
                       </div>
                       <div className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">
-                        Detected Format / Language: {extractedData.labelFormat} ({extractedData.detectedLanguage})
+                        Detected Language: {extractedData.detectedLanguage}
                       </div>
                     </div>
                   </div>
