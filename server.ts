@@ -1,14 +1,16 @@
-import express from "express";
+import fs from "fs";
 import path from "path";
+import dns from "dns";
+
+import express from "express";
+import { rateLimit } from "express-rate-limit";
 import { createServer as createViteServer } from "vite";
-import { ExtractionSchema, INPUT_SET_IDS, extractionJsonSchema } from './src/types';
 import { z } from 'zod';
 import { GoogleGenAI } from "@google/genai";
 import dotenv from "dotenv";
-import dns from "dns";
 import ipaddr from "ipaddr.js";
-import fs from "fs";
-import { rateLimit } from "express-rate-limit";
+
+import { ExtractionSchema, INPUT_SET_IDS, extractionJsonSchema } from './src/types';
 
 const {version: APP_VERSION, author: {email: APP_AUTHOR_EMAIL}} = JSON.parse(fs.readFileSync(new URL("./package.json", import.meta.url), "utf-8"));
 
