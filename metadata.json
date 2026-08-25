@@ -1,0 +1,6 @@
+{
+  "name": "Nutrition Facts Extractor for Open Food Facts",
+  "description": "Extract nutrition facts data from photo URLs or uploaded images using Gemini AI and output formatted text tables for Open Food Facts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
